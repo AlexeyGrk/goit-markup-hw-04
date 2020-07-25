@@ -81,7 +81,7 @@ img {
 
 .adress-item-link-icon {
   margin-right: 10px;
-  fill: #757575;
+  fill: currentColor;
 }
 
 .adress-item-link:hover .adress-item-link-icon:hover {
@@ -100,6 +100,15 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.active-page:after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+  display: block;
+}
+
 .adress-item-link {
   display: flex;
   align-items: center;
@@ -166,6 +175,17 @@ img {
 }
 .features-list-item:not(:last-child) {
   padding-right: 30px;
+}
+.features-list-item::before {
+  content: "";
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  background-image: url(../images/Vector1.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
 }
 .features-img {
   margin-bottom: 30px;
