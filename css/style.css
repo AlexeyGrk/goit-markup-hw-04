@@ -87,6 +87,7 @@ img {
 .adress-item-link:hover .adress-item-link-icon:hover {
   fill: #2196f3;
 }
+
 .main-nav-item,
 .adress-item {
   font-style: normal;
@@ -97,8 +98,10 @@ img {
 }
 .main-nav-item-link {
   color: var(--main-color-title);
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
 }
 .active-page:after {
   content: "";
@@ -346,46 +349,62 @@ img {
   height: 90px;
   justify-content: center;
   align-items: center;
+  color: #afb1b8;
 }
 
 .clients-list-item-link-icon-1 {
   width: 44px;
   height: 49px;
-  fill: #afb1b8;
+  fill: currentColor;
 }
 
-.clients-list-item-link :hover {
+.clients-list-item-link:hover .clients-list-item-link-icon-1 {
   fill: #2196f3;
 }
-.clients-list-item:hover .clients-list-item-link {
+.clients-list-item-link:hover .clients-list-item-link-icon-2 {
+  fill: #2196f3;
+}
+.clients-list-item-link:hover .clients-list-item-link-icon-3 {
+  fill: #2196f3;
+}
+.clients-list-item-link:hover .clients-list-item-link-icon-4 {
+  fill: #2196f3;
+}
+.clients-list-item-link:hover .clients-list-item-link-icon-5 {
+  fill: #2196f3;
+}
+.clients-list-item-link:hover .clients-list-item-link-icon-6 {
+  fill: #2196f3;
+}
+.clients-list-item-link:hover {
   border: 1px solid #2196f3;
   border-radius: 4px;
 }
 .clients-list-item-link-icon-2 {
   width: 44px;
   height: 49px;
-  fill: #afb1b8;
+  fill: currentColor;
 }
 
 .clients-list-item-link-icon-3 {
   width: 41px;
   height: 43px;
-  fill: #afb1b8;
+  fill: currentColor;
 }
 .clients-list-item-link-icon-4 {
   width: 80px;
   height: 42px;
-  fill: #afb1b8;
+  fill: currentColor;
 }
 .clients-list-item-link-icon-5 {
   width: 59px;
   height: 47px;
-  fill: #afb1b8;
+  fill: currentColor;
 }
 .clients-list-item-link-icon-6 {
   width: 88px;
   height: 45px;
-  fill: #afb1b8;
+  fill: currentColor;
 }
 
 /* footer */
@@ -463,6 +482,9 @@ img {
   fill: #ffffff;
 }
 /* portfolio */
+.portfolio-border {
+  border-bottom: 1px solid #ececec;
+}
 .filter {
   padding-top: 93px;
   margin-bottom: 50px;
@@ -486,6 +508,9 @@ img {
 :focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
 }
 .portfolio-list-item-title {
   font-weight: 700;
@@ -524,12 +549,14 @@ img {
   flex-wrap: wrap;
 }
 .filter-list-btn {
-  background-color: #f5f4fa;
+  background: #f5f4fa;
+  height: 38px;
   border-radius: 4px;
   padding-bottom: 6px;
   padding-top: 6px;
   padding-right: 22px;
   padding-left: 22px;
+  border: none;
 }
 .portfolio-list-item {
   width: calc((100% - 60px) / 3);
